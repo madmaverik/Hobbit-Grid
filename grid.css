@@ -1,0 +1,45 @@
+body {
+	height: 100%;
+	min-width: 480px;
+	max-width: 1200px;
+
+}
+
+.row {
+	min-height: 1px;
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+.col {
+	background: gray;
+	min-height: 40px;
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1%;
+}
+
+.col:first-child {margin-left: 0;}
+
+.col:last-child {margin-right: 0;}
+
+.group:before,
+.group:after { content:" "; display: table;}
+.group:after { clear:both;}
+.group {zoom:1; /* For IE 6/7 */ }
+
+.dessert {width: 100%;}
+.supper {width: 87.37%;}
+.dinner {width: 74.75%;}
+.afternoontea {width: 62.12%;}
+.luncheon{width: 49.5%;}
+.elevenses{width: 36.87%;}
+.secondbreakfast {width: 24.25%;}
+.breakfast {width: 11.62%;}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.breakfast, .secondbreakfast, .elevenses, .luncheon, .afternoontea, .dinner, .supper, .dessert{ width: 100%; }
+}
